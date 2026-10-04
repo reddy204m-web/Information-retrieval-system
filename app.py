@@ -8,6 +8,10 @@ from src.helper import (
 )
 
 
+
+
+
+
 def main():
     st.set_page_config(
         page_title="Information Retrieval System",
@@ -95,7 +99,7 @@ Answer:
                 response = st.session_state.llm.invoke(prompt)
 
                 st.subheader("Answer")
-                st.write(response.content)
+                st.write(response.content[0]["text"])
 
 
 if __name__ == "__main__":
