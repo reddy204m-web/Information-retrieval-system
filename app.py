@@ -8,6 +8,10 @@ from src.helper import (
 )
 
 
+
+
+
+
 def main():
     st.set_page_config(
         page_title="Information Retrieval System",
